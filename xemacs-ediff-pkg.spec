@@ -10,13 +10,14 @@ Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	de66f77ac38f2df7dd4c5a94d9582f55
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
-BuildArch:	noarch
-Conflicts:	xemacs-sumo
+BuildRequires:	texinfo
 Requires:	xemacs
-Requires:	xemacs-pcl-cvs-pkg
-Requires:	xemacs-elib-pkg
-Requires:	xemacs-dired-pkg
 Requires:	xemacs-base-pkg
+Requires:	xemacs-dired-pkg
+Requires:	xemacs-elib-pkg
+Requires:	xemacs-pcl-cvs-pkg
+Conflicts:	xemacs-sumo
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -55,7 +56,7 @@ rm -fr $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc lisp/ediff/README lisp/ediff/ChangeLog
-%{_datadir}/xemacs-packages%{_sysconfdir}/*
-%{_infodir}/*
+%{_datadir}/xemacs-packages/etc/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
+%{_infodir}/*.info*
