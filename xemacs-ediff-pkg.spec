@@ -2,7 +2,7 @@ Summary:	Interface over GNU patch
 Summary(pl):	Interface over GNU patch
 Name:		xemacs-ediff-pkg
 %define 	srcname	ediff
-Version:	1.29
+Version:	1.30
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
