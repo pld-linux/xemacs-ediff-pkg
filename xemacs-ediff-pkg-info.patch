@@ -1,0 +1,29 @@
+diff -Nur xemacs-ediff-pkg-1.24/man/ediff/ediff.texi xemacs-ediff-pkg-1.24.new/man/ediff/ediff.texi
+--- xemacs-ediff-pkg-1.24/man/ediff/ediff.texi	Sun Nov 28 21:10:36 1999
++++ xemacs-ediff-pkg-1.24.new/man/ediff/ediff.texi	Sun Mar 26 14:51:11 2000
+@@ -7,17 +7,22 @@
+ @comment Using ediff.info instead of ediff in setfilename breaks DOS.
+ @comment @setfilename ediff
+ @comment @setfilename ediff.info
+-@setfilename ../info/ediff
++@setfilename ../../info/ediff.info
+ 
+ @settitle Ediff User's Manual
+ @synindex vr cp
+ @synindex fn cp
+ @synindex pg cp
+ 
+-@dircategory Editors
++@ifinfo
++@format
++@dircategory XEmacs Editor:
+ @direntry
+-* Ediff: (ediff).       A visual interface for comparing and merging programs.
++* Ediff: (ediff).                       A visual interface for comparing and merging programs.
+ @end direntry
++@end format
++@end ifinfo
++
+ 
+ @iftex
+ @finalout
