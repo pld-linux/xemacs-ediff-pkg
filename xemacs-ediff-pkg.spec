@@ -2,7 +2,7 @@ Summary:	Interface over GNU patch
 Summary(pl):	Interfejs do GNU patch
 Name:		xemacs-ediff-pkg
 %define 	srcname	ediff
-Version:	1.39
+Version:	1.41
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -39,8 +39,6 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/ediff/README lisp/ediff/ChangeLog
-
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
@@ -55,7 +53,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/ediff/README.gz lisp/ediff/ChangeLog.gz
+%doc lisp/ediff/README lisp/ediff/ChangeLog
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
