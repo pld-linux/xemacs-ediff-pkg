@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Interface over GNU patch.
 
-%description -l pl 
+%description -l pl
 Interfejs do GNU patch.
 
 %prep
@@ -39,7 +39,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/ediff/README lisp/ediff/ChangeLog 
+gzip -9nf lisp/ediff/README lisp/ediff/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -52,7 +52,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/ediff/README.gz lisp/ediff/ChangeLog.gz 
+%doc lisp/ediff/README.gz lisp/ediff/ChangeLog.gz
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
