@@ -31,7 +31,8 @@ Interfejs do GNU patch.
 %patch0 -p1
 
 %build
-(cd man/ediff; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
+cd man/ediff
+awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo
 
 %install
 rm -rf $RPM_BUILD_ROOT
