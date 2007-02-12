@@ -1,5 +1,5 @@
 Summary:	Interface over GNU patch
-Summary(pl):	Interfejs do GNU patch
+Summary(pl.UTF-8):   Interfejs do GNU patch
 Name:		xemacs-ediff-pkg
 %define 	srcname	ediff
 Version:	1.49
@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Interface over GNU patch.
 
-%description -l pl
+%description -l pl.UTF-8
 Interfejs do GNU patch.
 
 %prep
