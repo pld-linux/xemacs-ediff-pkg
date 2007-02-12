@@ -1,5 +1,5 @@
 Summary:	Interface over GNU patch
-Summary(pl.UTF-8):   Interfejs do GNU patch
+Summary(pl.UTF-8):	Interfejs do GNU patch
 Name:		xemacs-ediff-pkg
 %define 	srcname	ediff
 Version:	1.49
