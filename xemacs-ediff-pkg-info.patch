@@ -1,5 +1,5 @@
---- xemacs-ediff-pkg-1.33/man/ediff/ediff.texi.orig	Sat Jul 21 23:52:28 2001
-+++ xemacs-ediff-pkg-1.33/man/ediff/ediff.texi	Mon Jan  7 18:14:57 2002
+--- xemacs-ediff-pkg-1.84/man/ediff/ediff.texi	2018-07-29 11:43:23.000000000 +0200
++++ xemacs-ediff-pkg-1.84/man/ediff/ediff.texi	2026-03-15 22:14:48.929929930 +0100
 @@ -7,7 +7,7 @@
  @comment Using ediff.info instead of ediff in setfilename breaks DOS.
  @comment @setfilename ediff
@@ -9,9 +9,9 @@
  
  @settitle Ediff User's Manual
  @synindex vr cp
-@@ -15,10 +15,15 @@
- @synindex pg cp
- @synindex ky cp
+@@ -42,10 +42,15 @@
+ @end quotation
+ @end copying
  
 -@dircategory Editors
 +@ifinfo
@@ -25,5 +25,5 @@
 +@end format
 +@end ifinfo
  
- @iftex
- @finalout
+ @titlepage
+ @title Ediff User's Manual

@@ -2,14 +2,14 @@ Summary:	Interface over GNU patch
 Summary(pl.UTF-8):	Interfejs do GNU patch
 Name:		xemacs-ediff-pkg
 %define 	srcname	ediff
-Version:	1.81
+Version:	1.84
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
-Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	d2cfec0452038861856dbbdeb35988f9
+Source0:	http://ftp.xemacs.org/pub/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
+# Source0-md5:	4d7d2fb3e8bdf89bcb2265de16ed144f
 Patch0:		%{name}-info.patch
-URL:		http://www.xemacs.org/
+URL:		https://www.xemacs.org/
 BuildRequires:	texinfo
 Requires:	xemacs
 Requires:	xemacs-base-pkg
